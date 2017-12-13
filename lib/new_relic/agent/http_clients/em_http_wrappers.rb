@@ -39,7 +39,7 @@ module NewRelic
         end
 
         def uri
-          URI.parse @client.req.uri.to_s
+          @uri ||= URI.parse(@client.req.uri.normalize.to_s)
         end
       end
 
