@@ -17,7 +17,7 @@ DependencyDetection.defer do
       def activate_connection_with_newrelic(client)
         wrapped_request = ::NewRelic::Agent::HTTPClients::EmHttpRequest.new(client)
 
-        client.newrelic_segment = ::NewRelic::Agent::Transaction.start_external_request_segment(
+        client.newrelic_segment = ::NewRelic::Agent::Tracer.start_external_request_segment(
           wrapped_request.type, wrapped_request.uri, wrapped_request.method
         )
 

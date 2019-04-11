@@ -22,5 +22,5 @@ Or install it yourself as:
 
 ## License
 
-* Copyright (c) 2017 Railsware [www.railsware.com](http://www.railsware.com)
+* Copyright (c) 2019 Railsware [www.railsware.com](http://www.railsware.com)
 * [MIT](www.opensource.org/licenses/MIT)
